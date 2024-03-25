@@ -74,3 +74,8 @@ export GH_BROWSER="'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'"
 # sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
 # sudo chmod 440 /etc/sudoers.d/postgresq
 sudo /etc/init.d/postgresql start
+
+# rust export
+export PATH="$HOME/.cargo/bin:$PATH"
+# rust framework anchor
+export PATH="/home/rafamsilva/.avm/bin

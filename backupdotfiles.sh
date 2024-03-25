@@ -1,11 +1,9 @@
+#!/bin/zsh
+
 # make it executable everywhere
 # sudo cp ~/hello.sh /usr/bin
 # sudo chmod o+x /usr/bin/hello.sh
 echo "Backup .zshrc" to dotfiles
-cp ~/.zshrc /home/rafamsilva/code/rafaover/dotfiles/.zshrc_backup
-
-
-#!/bin/zsh
 
 ZSH_FILE="$HOME/.zshrc"
 DESTINATION_DIR="$HOME/code/rafaover/dotfiles"
@@ -17,7 +15,7 @@ if [ ! -d "$DESTINATION_DIR" ]; then
 fi
 
 # Copy .zshrc to destination directory
-cp "$SOURCE_FILE" "$DESTINATION_FILE"
+cp "$ZSH_FILE" "$ZSH_DEST_FILE"
 
 # Notify user about successful backup
-echo "Backup of .zshrc created at: $DESTINATION_FILE"
+echo "Backup of .zshrc created at: $ZSH_DEST_FILE"
